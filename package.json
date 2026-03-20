@@ -1,0 +1,28 @@
+{
+  "name": "delaunay.js",
+  "version": "1.0.0",
+  "description": "Delaunay triangulation using the Bowyer-Watson algorithm, in JavaScript ",
+  "keywords": [
+    "triangulation",
+    "delaunay",
+    "bowyer-watson"
+  ],
+  "homepage": "https://github.com/DonKarlssonSan/Delaunay.js#readme",
+  "bugs": {
+    "url": "https://github.com/DonKarlssonSan/Delaunay.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonKarlssonSan/Delaunay.js.git"
+  },
+  "license": "MIT",
+  "author": "Johan Karlsson (DonKarlssonSan)",
+  "type": "module",
+  "main": "bowyer-watson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "vectory-lib": "^0.0.7"
+  }
+}
