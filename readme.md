@@ -1,3 +1,6 @@
+# About
+This is a JavaScript library for performing Delaunay triangulation for a set of points. It is implemented using the Bowyer-Watson algorithm.
+
 # Installation
 
 ```
