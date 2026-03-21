@@ -1,6 +1,6 @@
 {
   "name": "delaunay.js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Delaunay triangulation using the Bowyer-Watson algorithm, in JavaScript ",
   "keywords": [
     "triangulation",
