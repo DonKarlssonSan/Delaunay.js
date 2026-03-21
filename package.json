@@ -20,7 +20,7 @@
   "type": "module",
   "main": "bowyer-watson.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "dependencies": {
     "vectory-lib": "^0.0.7"
