@@ -8,7 +8,7 @@ This is a JavaScript library for performing Delaunay triangulation for a set of 
 # Installation
 
 ```
-npm install delaunay
+npm install delaunay.js
 ```
 
 # Usage
@@ -24,8 +24,8 @@ let triangles = bowyerWatson(superTriangle, pointList);
 A more complete example:
 
 ```JavaScript
-import bowyerWatson from './bowyer-watson.js';
-import Triangle from './triangle.js';
+import bowyerWatson from 'delaunay.js';
+import Triangle from 'delaunay.js/triangle.js';
 import Vector from 'vectory-lib';
 
 function getRandomPoints() {
@@ -50,6 +50,9 @@ let superTriangle = new Triangle(
 
 let triangles = bowyerWatson(superTriangle, pointList);
 ```
+- `vectory-lib` is another library written by me, it contains basic vector math, exposed via the `Vector` JavaScript class.
+- `Triangle` is included in the delaunay.js library, it contains math operations on triangles like `circumcenter`, `centroid` and `pointIsInsideCircumcircle` which are needed by the Bowyer-Watson algorithm.
+
 
 # Referenses
 https://en.wikipedia.org/wiki/Delaunay_triangulation
