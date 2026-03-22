@@ -1,11 +1,14 @@
 {
   "name": "delaunay.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Delaunay triangulation using the Bowyer-Watson algorithm, in JavaScript ",
   "keywords": [
     "triangulation",
+    "triangulate",
+    "triangles",
     "delaunay",
-    "bowyer-watson"
+    "bowyer-watson",
+    "javascript"
   ],
   "homepage": "https://github.com/DonKarlssonSan/Delaunay.js#readme",
   "bugs": {
