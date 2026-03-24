@@ -10,6 +10,10 @@ export default class Triangle {
   vertexes() {
     return [this.a, this.b, this.c];
   }
+
+  vertexesAsString() {
+    return this.vertexes().map(vertex => `${vertex.x}, ${vertex.y}`).join(", ");
+  }
   
   edges() {
     return [
