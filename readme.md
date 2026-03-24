@@ -1,9 +1,12 @@
+![alt text](doc/image.png)
+
 # About
 This is a JavaScript library for performing Delaunay triangulation for a set of points. It is implemented using the Bowyer-Watson algorithm.
 
 ## Live demos
 
 - Colorful Triangle Pattern Generator, draws a pattern using canvas in the browser: [live demo](https://donkarlssonsan.github.io/colorful-triangle-pattern/), [(source code)](https://github.com/DonKarlssonSan/colorful-triangle-pattern)
+- Striped Triangles Pattern Generator, draws striped triangles using SVG in the browser: [live demo](https://donkarlssonsan.github.io/striped-triangles-pattern/), [(source code)](https://github.com/DonKarlssonSan/striped-triangles-pattern)
 
 # Installation
 

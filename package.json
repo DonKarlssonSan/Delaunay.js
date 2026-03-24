@@ -1,6 +1,6 @@
 {
   "name": "delaunay.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Delaunay triangulation using the Bowyer-Watson algorithm, in JavaScript ",
   "keywords": [
     "triangulation",
@@ -21,9 +21,12 @@
   "license": "MIT",
   "author": "Johan Karlsson (DonKarlssonSan)",
   "type": "module",
-  "main": "bowyer-watson.js",
+  "main": "src/bowyer-watson.js",
+  "files": [
+    "src/"
+  ],
   "scripts": {
-    "test": "node test.js"
+    "test": "node test/test.js"
   },
   "dependencies": {
     "vectory-lib": "^0.0.7"

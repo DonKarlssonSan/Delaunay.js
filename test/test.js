@@ -1,5 +1,5 @@
-import bowyerWatson from './bowyer-watson.js';
-import Triangle from './triangle.js';
+import bowyerWatson from '../src/bowyer-watson.js';
+import Triangle from '../src/triangle.js';
 import Vector from 'vectory-lib';
 
 function getRandomPoints() {
