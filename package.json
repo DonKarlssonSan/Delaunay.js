@@ -29,6 +29,6 @@
     "test": "node test/test.js"
   },
   "dependencies": {
-    "vectory-lib": "^0.0.7"
+    "vectory-lib": "^0.0.9"
   }
 }
