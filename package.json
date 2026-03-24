@@ -1,6 +1,6 @@
 {
   "name": "delaunay.js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Delaunay triangulation using the Bowyer-Watson algorithm, in JavaScript ",
   "keywords": [
     "triangulation",
@@ -21,7 +21,7 @@
   "license": "MIT",
   "author": "Johan Karlsson (DonKarlssonSan)",
   "type": "module",
-  "main": "src/bowyer-watson.js",
+  "main": "src/index.js",
   "files": [
     "src/"
   ],

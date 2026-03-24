@@ -27,8 +27,7 @@ let triangles = bowyerWatson(superTriangle, pointList);
 A more complete example:
 
 ```JavaScript
-import bowyerWatson from 'delaunay.js';
-import Triangle from 'delaunay.js/triangle.js';
+import { bowyerWatson, Triangle } from 'delaunay.js';
 import Vector from 'vectory-lib';
 
 function getRandomPoints() {
