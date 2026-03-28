@@ -26,7 +26,9 @@
     "src/"
   ],
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js 10",
+    "prof": "node --prof test/test.js 10000",
+    "cpu-prof": "node --cpu-prof test/test.js 10000"
   },
   "dependencies": {
     "vectory-lib": "^0.0.9"
