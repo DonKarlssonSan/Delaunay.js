@@ -30,7 +30,7 @@ export default function bowyerWatson (superTriangle, pointList) {
           return triangle !== otherTriangle && otherTriangle.hasEdge(edge);
         });
         if(!edgeIsShared) {
-          //edge is not shared by any other
+          // edge is not shared by any other
           // triangles in badTriangles
           polygon.push(edge);
         }
@@ -47,7 +47,7 @@ export default function bowyerWatson (superTriangle, pointList) {
 
     // re-triangulate the polygonal hole
     polygon.forEach(edge => {
-      //form a triangle from edge to point
+      // form a triangle from edge to point
       let newTri = new Triangle(edge[0], edge[1], point);
       triangulation.push(newTri);
     });
@@ -58,7 +58,7 @@ export default function bowyerWatson (superTriangle, pointList) {
   while(i--) {
     let triangle = triangulation[i];
     if(triangle.sharesAVertexWith(superTriangle)) {
-      //remove triangle from triangulation
+      // remove triangle from triangulation
       let index = triangulation.indexOf(triangle);
       if (index > -1) {
         triangulation.splice(index, 1);
