@@ -75,16 +75,16 @@ export default class Triangle {
     return this._centroid;
   }
 
-  get circumradius() {
-    if(!this._circumradius) {
-      this._circumradius = this.circumcenter.sub(this.a).getLength();
+  get circumradiusSq() {
+    if(!this._circumradiusSq) {
+      this._circumradiusSq = this.circumcenter.sub(this.a).getLengthSq();
     }
-    return this._circumradius;
+    return this._circumradiusSq;
   }
 
   pointIsInsideCircumcircle(point) {
     let dist = point.sub(this.circumcenter).getLengthSq();
 
-    return dist < this.circumradius * this.circumradius;
+    return dist < this.circumradiusSq;
   }
 }
