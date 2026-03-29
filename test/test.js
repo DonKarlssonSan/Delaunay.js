@@ -35,7 +35,10 @@ let superTriangle = new Triangle(
     new Vector(0, -1000)
 );
 
+const t0 = performance.now();
 let triangles = bowyerWatson(superTriangle, pointList);
+const t1 = performance.now();
+console.log(`It took ${t1 - t0} milliseconds.`);
 
 // triangles.forEach(triangle => {
 //   console.log(triangle.vertexes());
