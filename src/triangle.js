@@ -11,10 +11,6 @@ export default class Triangle {
     return [this.a, this.b, this.c];
   }
 
-  vertexesAsString() {
-    return this.vertexes().map(vertex => `${vertex.x}, ${vertex.y}`).join(", ");
-  }
-
   edges() {
     return [
       [this.a, this.b],
@@ -86,5 +82,28 @@ export default class Triangle {
     let dist = point.sub(this.circumcenter).getLengthSq();
 
     return dist < this.circumradiusSq;
+  }
+
+  // Methods below are not needed for Delaunay triangulation, but useful for drawing.
+  vertexesAsString() {
+    return this.vertexes().map(vertex => `${vertex.x}, ${vertex.y}`).join(", ");
+  }
+
+  edgeLengths() {
+    return this.edges().map(v => v[0].sub(v[1]).getLength());
+  }
+  
+  heights() {
+    let [a, b, c] = this.edgeLengths();
+    function height(a, b, c) {
+      const s = (a + b + c) / 2;
+      const h = 2 * Math.sqrt(s * (s - a) * (s - b) * (s - c)) / b;
+      return h;
+    }
+    return [height(a, b, c), height(b, c, a), height(c, a, b)];
+  }
+  
+  shortestHeight() {
+    return Math.min(...this.heights());
   }
 }
