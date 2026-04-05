@@ -20,11 +20,8 @@ export default class Triangle {
   }
 
   sharesAVertexWith(triangle) {
-    // TODO: optimize me please!
-    for(let i = 0; i < 3; i++) {
-      for(let j = 0; j < 3; j++) {
-        let v = this.vertexes()[i];
-        let vv = triangle.vertexes()[j];
+    for(const v of this.vertexes()) {
+      for(const vv of triangle.vertexes()) {
         if(v.equals(vv)) {
           return true;
         }
@@ -34,8 +31,7 @@ export default class Triangle {
   }
 
   hasEdge(edge) {
-    for(let i = 0; i < 3; i++) {
-      let e = this.edges()[i];
+    for(const e of this.edges()) {
       if(e[0].equals(edge[0]) && e[1].equals(edge[1]) ||
          e[1].equals(edge[0]) && e[0].equals(edge[1])) {
         return true;
@@ -45,9 +41,7 @@ export default class Triangle {
   }
 
   sharesAnEdgeWith(triangle) {
-    let edges = triangle.edges();
-    for(let i = 0; i < edges.length; i++) {
-      let edge = edges[i];
+    for(const edge of triangle.edges()) {
       if(this.hasEdge(edge)) {
         return true;
       }
