@@ -44,6 +44,17 @@ export default class Triangle {
     return false;
   }
 
+  sharesAnEdgeWith(triangle) {
+    let edges = triangle.edges();
+    for(let i = 0; i < edges.length; i++) {
+      let edge = edges[i];
+      if(this.hasEdge(edge)) {
+        return true;
+      }
+    } 
+    return false;
+  }
+
   get circumcenter() {
     if(!this._circumcenter) {
       let d = 2 * (this.a.x * (this.b.y - this.c.y) +
