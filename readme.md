@@ -51,14 +51,15 @@ let superTriangle = new Triangle(
 );
 
 let triangles = bowyerWatson(superTriangle, pointList);
+// Do something exciting with the triangles!
 ```
-- `vectory-lib` is another library written by me, it contains basic vector math, exposed via the `Vector` JavaScript class.
+- [`vectory-lib`](https://github.com/DonKarlssonSan/vectory) is another library written by me, it contains basic vector math, exposed via the `Vector` JavaScript class.
 - `Triangle` is included in the delaunay.js library, it contains math operations on triangles like `circumcenter`, `centroid` and `pointIsInsideCircumcircle` which are needed by the Bowyer-Watson algorithm.
 
 
 # Referenses
 https://en.wikipedia.org/wiki/Delaunay_triangulation
 
-https://en.wikipedia.org/wiki/Bowyer%E2%80%93Watson_algorithm  
+https://en.wikipedia.org/wiki/Bowyer%E2%80%93Watson_algorithm
 
 https://en.wikipedia.org/wiki/Circumscribed_circle
